@@ -2,7 +2,6 @@ class Po4a < Formula
   homepage "http://po4a.alioth.debian.org/"
   url "http://ftp.debian.org/debian/pool/main/p/po4a/po4a_0.47.orig.tar.gz"
   sha256 "5010e1b7df1115cbd475f46587fc05fefc97301f9bba0c2f15106005ca017507"
-  sha1 "70d3a2cec8f75c2196415bb1d21ccdd5c87002bc"
 
   depends_on "gettext" => :build
 
