@@ -1,14 +1,15 @@
 class Po4a < Formula
   homepage "http://po4a.alioth.debian.org/"
-  url "http://ftp.debian.org/debian/pool/main/p/po4a/po4a_0.45.orig.tar.gz"
-  sha1 "c38c32d96c2a25f3a6cc5d8afb1fbdde362b7c19"
+  url "http://ftp.debian.org/debian/pool/main/p/po4a/po4a_0.47.orig.tar.gz"
+  sha256 "5010e1b7df1115cbd475f46587fc05fefc97301f9bba0c2f15106005ca017507"
+  sha1 "70d3a2cec8f75c2196415bb1d21ccdd5c87002bc"
 
   depends_on "gettext" => :build
 
   resource "Locale::Gettext" do
-    url "http://search.cpan.org/CPAN/authors/id/P/PV/PVANDRY/gettext-1.05.tar.gz"
-    mirror "http://search.mcpan.org/CPAN/authors/id/P/PV/PVANDRY/gettext-1.05.tar.gz"
-    sha1 "705f519ad61b4a8c522d8aaf98425e0bd21709f2"
+    url "http://search.cpan.org/CPAN/authors/id/P/PV/PVANDRY/gettext-1.07.tar.gz"
+    mirror "http://search.mcpan.org/CPAN/authors/id/P/PV/PVANDRY/gettext-1.07.tar.gz"
+    sha256 "909d47954697e7c04218f972915b787bd1244d75e3bd01620bc167d5bbc49c15"
   end
 
   #resource "SGMLS" do
@@ -20,13 +21,13 @@ class Po4a < Formula
   resource "Text::WrapI18N" do
     url "http://search.cpan.org/CPAN/authors/id/K/KU/KUBOTA/Text-WrapI18N-0.06.tar.gz"
     mirror "http://search.mcpan.org/CPAN/authors/id/K/KU/KUBOTA/Text-WrapI18N-0.06.tar.gz"
-    sha1 "f397756b8d0a090fdecbf9c854922c0d9825f284"
+    sha256 "4bd29a17f0c2c792d12c1005b3c276f2ab0fae39c00859ae1741d7941846a488"
   end
 
   resource "Unicode::GCString" do
-    url "http://search.cpan.org/CPAN/authors/id/N/NE/NEZUMI/Unicode-LineBreak-2014.06.tar.gz"
-    mirror "http://search.mcpan.org/CPAN/authors/id/N/NE/NEZUMI/Unicode-LineBreak-2014.06.tar.gz"
-    sha1 "8222276b221f503b9679204e4a9bd53f65f9a3ef"
+    url "http://www.cpan.org/authors/id/N/NE/NEZUMI/Unicode-LineBreak-2016.003.tar.gz"
+    mirror "http://search.mcpan.org/CPAN/authors/id/N/NE/NEZUMI/Unicode-LineBreak-2016.003.tar.gz"
+    sha256 "e64e2d990a8cc90f8a387866509c35a93c50b812f5a2e60f3d9deb947a71dc24"
   end
 
   def install
