@@ -4,6 +4,7 @@ class Po4a < Formula
   sha256 "5010e1b7df1115cbd475f46587fc05fefc97301f9bba0c2f15106005ca017507"
 
   depends_on "gettext" => :build
+  depends_on "perl"
 
   resource "Locale::Gettext" do
     url "http://search.cpan.org/CPAN/authors/id/P/PV/PVANDRY/gettext-1.07.tar.gz"
