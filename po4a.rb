@@ -46,6 +46,7 @@ class Po4a < Formula
   def install
     ENV.prepend_create_path "PERL5LIB", libexec+"lib/perl5"
     #ENV.prepend_create_path "PERLLIB", '/usr/local/lib/perl5'  # for SGMLS
+    ENV.prepend_path "XML_CATALOG_FILES", etc+"/catalog"
 
     resources.each do |r|
       r.stage do
