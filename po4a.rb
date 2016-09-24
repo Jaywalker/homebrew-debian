@@ -4,7 +4,12 @@ class Po4a < Formula
   sha256 "5010e1b7df1115cbd475f46587fc05fefc97301f9bba0c2f15106005ca017507"
 
   depends_on "gettext" => :build
-  depends_on "perl"
+
+  resource "Module::Build" do
+    url "https://cpan.metacpan.org/authors/id/L/LE/LEONT/Module-Build-0.4220.tar.gz"
+    mirror "https://cpan.metacpan.org/authors/id/L/LE/LEONT/Module-Build-0.4220.tar.gz"
+    sha256 "fb1207c7e799366f7a8adda3f135bf8141c4d6068505650d4db2b2d3ce34b5a2"
+  end
 
   resource "Locale::Gettext" do
     url "http://search.cpan.org/CPAN/authors/id/P/PV/PVANDRY/gettext-1.07.tar.gz"
