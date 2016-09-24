@@ -1,7 +1,7 @@
 class Po4a < Formula
   homepage "http://po4a.alioth.debian.org/"
-  url "http://ftp.debian.org/debian/pool/main/p/po4a/po4a_0.47.orig.tar.gz"
-  sha256 "5010e1b7df1115cbd475f46587fc05fefc97301f9bba0c2f15106005ca017507"
+  url "https://alioth.debian.org/frs/download.php/file/4176/po4a-0.48.tar.gz"
+  sha256 "a89595ca42e896c97ce4ffc231a075cc88692216b4bc05df40414d7428c4286c"
 
   depends_on "gettext" => :build
   depends_on "docbook"
@@ -46,7 +46,9 @@ class Po4a < Formula
   def install
     ENV.prepend_create_path "PERL5LIB", libexec+"lib/perl5"
     #ENV.prepend_create_path "PERLLIB", '/usr/local/lib/perl5'  # for SGMLS
+    ENV.delete "XML_CATALOG_FILES"
     ENV.prepend_path "XML_CATALOG_FILES", etc+"/catalog"
+    print ENV["XML_CATALOG_FILES"]
 
     resources.each do |r|
       r.stage do
