@@ -4,6 +4,8 @@ class Po4a < Formula
   sha256 "5010e1b7df1115cbd475f46587fc05fefc97301f9bba0c2f15106005ca017507"
 
   depends_on "gettext" => :build
+  depends_on "docbook"
+  depends_on "docbook-xsl"
 
   resource "Module::Build" do
     url "https://cpan.metacpan.org/authors/id/L/LE/LEONT/Module-Build-0.4220.tar.gz"
