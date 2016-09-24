@@ -11,6 +11,12 @@ class Po4a < Formula
     sha256 "fb1207c7e799366f7a8adda3f135bf8141c4d6068505650d4db2b2d3ce34b5a2"
   end
 
+  resource "Pod::Man" do
+    url "http://search.cpan.org/CPAN/authors/id/R/RR/RRA/podlators-4.07.tar.gz"
+    mirror "http://search.cpan.org/CPAN/authors/id/R/RR/RRA/podlators-4.07.tar.gz"
+    sha256 "a995ff7af4a8f835a44c6e66301e1afd8712f892996b1ae7398de2038f66a781"
+  end
+
   resource "Locale::Gettext" do
     url "http://search.cpan.org/CPAN/authors/id/P/PV/PVANDRY/gettext-1.07.tar.gz"
     mirror "http://search.mcpan.org/CPAN/authors/id/P/PV/PVANDRY/gettext-1.07.tar.gz"
